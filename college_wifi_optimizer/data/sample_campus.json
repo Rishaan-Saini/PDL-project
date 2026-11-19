@@ -1,0 +1,1178 @@
+{
+  "name": "Sample Engineering College",
+  "server_id": "SRV",
+  "locations": [
+    {
+      "id": "CORR-A0",
+      "name": "Ground Floor Corridor",
+      "type": "corridor",
+      "building": "Block A",
+      "floor": 0,
+      "x": 30.0,
+      "y": 15.0,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": true,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-101",
+      "name": "Classroom A-101",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 0,
+      "x": 7.5,
+      "y": 24.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-102",
+      "name": "Classroom A-102",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 0,
+      "x": 22.5,
+      "y": 24.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-103",
+      "name": "Classroom A-103",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 0,
+      "x": 37.5,
+      "y": 24.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-104",
+      "name": "Computer Lab A-104",
+      "type": "lab",
+      "building": "Block A",
+      "floor": 0,
+      "x": 52.5,
+      "y": 24.0,
+      "devices": 40,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-105",
+      "name": "Classroom A-105",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 0,
+      "x": 10.0,
+      "y": 6.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-106",
+      "name": "Faculty Office A-106",
+      "type": "office",
+      "building": "Block A",
+      "floor": 0,
+      "x": 30.0,
+      "y": 6.0,
+      "devices": 10,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "SRV",
+      "name": "Central Server Room",
+      "type": "server_room",
+      "building": "Block A",
+      "floor": 0,
+      "x": 50.0,
+      "y": 6.0,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "CORR-A1",
+      "name": "First Floor Corridor",
+      "type": "corridor",
+      "building": "Block A",
+      "floor": 1,
+      "x": 30.0,
+      "y": 15.0,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-201",
+      "name": "Classroom A-201",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 1,
+      "x": 7.5,
+      "y": 24.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-202",
+      "name": "Classroom A-202",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 1,
+      "x": 22.5,
+      "y": 24.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-203",
+      "name": "Classroom A-203",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 1,
+      "x": 37.5,
+      "y": 24.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-204",
+      "name": "Computer Lab A-204",
+      "type": "lab",
+      "building": "Block A",
+      "floor": 1,
+      "x": 52.5,
+      "y": 24.0,
+      "devices": 40,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-205",
+      "name": "Staff Room A-205",
+      "type": "office",
+      "building": "Block A",
+      "floor": 1,
+      "x": 10.0,
+      "y": 6.0,
+      "devices": 10,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-206",
+      "name": "Seminar Hall A-206",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 1,
+      "x": 30.0,
+      "y": 6.0,
+      "devices": 30,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "A-207",
+      "name": "Classroom A-207",
+      "type": "classroom",
+      "building": "Block A",
+      "floor": 1,
+      "x": 50.0,
+      "y": 6.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "CORR-B0",
+      "name": "Ground Floor Corridor B",
+      "type": "corridor",
+      "building": "Block B",
+      "floor": 0,
+      "x": 92.0,
+      "y": 15.0,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": true,
+      "install_cost": 150.0
+    },
+    {
+      "id": "LAB-B1",
+      "name": "Computer Lab B-1",
+      "type": "lab",
+      "building": "Block B",
+      "floor": 0,
+      "x": 72.5,
+      "y": 24.0,
+      "devices": 40,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "LAB-B2",
+      "name": "Computer Lab B-2",
+      "type": "lab",
+      "building": "Block B",
+      "floor": 0,
+      "x": 87.5,
+      "y": 24.0,
+      "devices": 40,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "CR-B1",
+      "name": "Classroom B-101",
+      "type": "classroom",
+      "building": "Block B",
+      "floor": 0,
+      "x": 101.5,
+      "y": 24.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "STUDY-B1",
+      "name": "Study Area B-102",
+      "type": "study",
+      "building": "Block B",
+      "floor": 0,
+      "x": 114.0,
+      "y": 24.0,
+      "devices": 30,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "CR-B2",
+      "name": "Classroom B-103",
+      "type": "classroom",
+      "building": "Block B",
+      "floor": 0,
+      "x": 75.0,
+      "y": 6.0,
+      "devices": 35,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "DEPT-B",
+      "name": "Department Office B-104",
+      "type": "office",
+      "building": "Block B",
+      "floor": 0,
+      "x": 102.0,
+      "y": 6.0,
+      "devices": 10,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "CORR-B1",
+      "name": "First Floor Corridor B",
+      "type": "corridor",
+      "building": "Block B",
+      "floor": 1,
+      "x": 92.0,
+      "y": 15.0,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "LIB",
+      "name": "Central Library",
+      "type": "library",
+      "building": "Block B",
+      "floor": 1,
+      "x": 82.0,
+      "y": 24.0,
+      "devices": 80,
+      "needs_coverage": true,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "READ-B",
+      "name": "Reading Room",
+      "type": "study",
+      "building": "Block B",
+      "floor": 1,
+      "x": 110.0,
+      "y": 24.0,
+      "devices": 30,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "STAFF-B",
+      "name": "Staff Room B-201",
+      "type": "office",
+      "building": "Block B",
+      "floor": 1,
+      "x": 75.0,
+      "y": 6.0,
+      "devices": 10,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "SEM-B",
+      "name": "Seminar Room B-202",
+      "type": "classroom",
+      "building": "Block B",
+      "floor": 1,
+      "x": 102.0,
+      "y": 6.0,
+      "devices": 30,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "CORR-ADM",
+      "name": "Admin Entrance Hall",
+      "type": "corridor",
+      "building": "Administration",
+      "floor": 0,
+      "x": 22.5,
+      "y": 38.0,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "ADM-1",
+      "name": "Administrative Office",
+      "type": "office",
+      "building": "Administration",
+      "floor": 0,
+      "x": 7.5,
+      "y": 47.5,
+      "devices": 20,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "RECEP",
+      "name": "Reception",
+      "type": "reception",
+      "building": "Administration",
+      "floor": 0,
+      "x": 22.5,
+      "y": 52.0,
+      "devices": 15,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "FOY",
+      "name": "Auditorium Foyer",
+      "type": "corridor",
+      "building": "Auditorium",
+      "floor": 0,
+      "x": 47.5,
+      "y": 42.0,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "AUD",
+      "name": "Main Auditorium",
+      "type": "auditorium",
+      "building": "Auditorium",
+      "floor": 0,
+      "x": 47.5,
+      "y": 57.5,
+      "devices": 150,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 200.0
+    },
+    {
+      "id": "CORR-CAF",
+      "name": "Cafeteria Entrance",
+      "type": "corridor",
+      "building": "Cafeteria",
+      "floor": 0,
+      "x": 70.0,
+      "y": 40.0,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "CAF",
+      "name": "Cafeteria Dining Hall",
+      "type": "cafeteria",
+      "building": "Cafeteria",
+      "floor": 0,
+      "x": 82.5,
+      "y": 47.5,
+      "devices": 100,
+      "needs_coverage": true,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 150.0
+    },
+    {
+      "id": "J1",
+      "name": "Courtyard Junction J1",
+      "type": "outdoor",
+      "building": "Grounds",
+      "floor": 0,
+      "x": 62.5,
+      "y": 32.5,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 220.0
+    },
+    {
+      "id": "J2",
+      "name": "Courtyard Junction J2",
+      "type": "outdoor",
+      "building": "Grounds",
+      "floor": 0,
+      "x": 92.5,
+      "y": 32.5,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": false,
+      "existing_ap": false,
+      "install_cost": 220.0
+    },
+    {
+      "id": "J3",
+      "name": "Plaza Pole P3",
+      "type": "outdoor",
+      "building": "Grounds",
+      "floor": 0,
+      "x": 47.5,
+      "y": 32.5,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 220.0
+    },
+    {
+      "id": "J4",
+      "name": "Plaza Pole P4",
+      "type": "outdoor",
+      "building": "Grounds",
+      "floor": 0,
+      "x": 22.5,
+      "y": 32.5,
+      "devices": 0,
+      "needs_coverage": false,
+      "ap_candidate": true,
+      "existing_ap": false,
+      "install_cost": 220.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "CORR-A0",
+      "target": "A-101",
+      "distance": 27.9
+    },
+    {
+      "source": "CORR-A0",
+      "target": "A-102",
+      "distance": 13.5
+    },
+    {
+      "source": "CORR-A0",
+      "target": "A-103",
+      "distance": 13.5
+    },
+    {
+      "source": "CORR-A0",
+      "target": "A-104",
+      "distance": 27.9
+    },
+    {
+      "source": "CORR-A0",
+      "target": "A-105",
+      "distance": 25.2
+    },
+    {
+      "source": "CORR-A0",
+      "target": "A-106",
+      "distance": 10.3
+    },
+    {
+      "source": "CORR-A0",
+      "target": "SRV",
+      "distance": 25.2
+    },
+    {
+      "source": "CORR-A1",
+      "target": "A-201",
+      "distance": 27.9
+    },
+    {
+      "source": "CORR-A1",
+      "target": "A-202",
+      "distance": 13.5
+    },
+    {
+      "source": "CORR-A1",
+      "target": "A-203",
+      "distance": 13.5
+    },
+    {
+      "source": "CORR-A1",
+      "target": "A-204",
+      "distance": 27.9
+    },
+    {
+      "source": "CORR-A1",
+      "target": "A-205",
+      "distance": 25.2
+    },
+    {
+      "source": "CORR-A1",
+      "target": "A-206",
+      "distance": 10.3
+    },
+    {
+      "source": "CORR-A1",
+      "target": "A-207",
+      "distance": 25.2
+    },
+    {
+      "source": "CORR-B0",
+      "target": "LAB-B1",
+      "distance": 24.7
+    },
+    {
+      "source": "CORR-B0",
+      "target": "LAB-B2",
+      "distance": 11.6
+    },
+    {
+      "source": "CORR-B0",
+      "target": "CR-B1",
+      "distance": 15.0
+    },
+    {
+      "source": "CORR-B0",
+      "target": "STUDY-B1",
+      "distance": 27.3
+    },
+    {
+      "source": "CORR-B0",
+      "target": "CR-B2",
+      "distance": 22.1
+    },
+    {
+      "source": "CORR-B0",
+      "target": "DEPT-B",
+      "distance": 15.5
+    },
+    {
+      "source": "CORR-B1",
+      "target": "LIB",
+      "distance": 15.5
+    },
+    {
+      "source": "CORR-B1",
+      "target": "READ-B",
+      "distance": 23.1
+    },
+    {
+      "source": "CORR-B1",
+      "target": "STAFF-B",
+      "distance": 22.1
+    },
+    {
+      "source": "CORR-B1",
+      "target": "SEM-B",
+      "distance": 15.5
+    },
+    {
+      "source": "CORR-ADM",
+      "target": "ADM-1",
+      "distance": 20.4
+    },
+    {
+      "source": "CORR-ADM",
+      "target": "RECEP",
+      "distance": 16.1
+    },
+    {
+      "source": "FOY",
+      "target": "AUD",
+      "distance": 17.8
+    },
+    {
+      "source": "CORR-CAF",
+      "target": "CAF",
+      "distance": 16.8
+    },
+    {
+      "source": "CORR-A0",
+      "target": "CORR-A1",
+      "distance": 4.0
+    },
+    {
+      "source": "CORR-B0",
+      "target": "CORR-B1",
+      "distance": 4.0
+    },
+    {
+      "source": "CORR-A0",
+      "target": "J4",
+      "distance": 21.9
+    },
+    {
+      "source": "CORR-A0",
+      "target": "J3",
+      "distance": 28.5
+    },
+    {
+      "source": "J4",
+      "target": "CORR-ADM",
+      "distance": 6.3
+    },
+    {
+      "source": "J3",
+      "target": "FOY",
+      "distance": 10.9
+    },
+    {
+      "source": "J3",
+      "target": "J1",
+      "distance": 17.2
+    },
+    {
+      "source": "J1",
+      "target": "J2",
+      "distance": 34.5
+    },
+    {
+      "source": "J2",
+      "target": "CORR-B0",
+      "distance": 20.1
+    },
+    {
+      "source": "J2",
+      "target": "CORR-CAF",
+      "distance": 27.3
+    }
+  ],
+  "walls": [
+    {
+      "floor": 0,
+      "x1": 0.0,
+      "y1": 0.0,
+      "x2": 60.0,
+      "y2": 0.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 60.0,
+      "y1": 0.0,
+      "x2": 60.0,
+      "y2": 30.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 60.0,
+      "y1": 30.0,
+      "x2": 0.0,
+      "y2": 30.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 0.0,
+      "y1": 30.0,
+      "x2": 0.0,
+      "y2": 0.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 0.0,
+      "y1": 12.0,
+      "x2": 60.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 0.0,
+      "y1": 18.0,
+      "x2": 60.0,
+      "y2": 18.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 15.0,
+      "y1": 18.0,
+      "x2": 15.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 30.0,
+      "y1": 18.0,
+      "x2": 30.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 45.0,
+      "y1": 18.0,
+      "x2": 45.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 20.0,
+      "y1": 0.0,
+      "x2": 20.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 40.0,
+      "y1": 0.0,
+      "x2": 40.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 0.0,
+      "y1": 0.0,
+      "x2": 60.0,
+      "y2": 0.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 1,
+      "x1": 60.0,
+      "y1": 0.0,
+      "x2": 60.0,
+      "y2": 30.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 1,
+      "x1": 60.0,
+      "y1": 30.0,
+      "x2": 0.0,
+      "y2": 30.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 1,
+      "x1": 0.0,
+      "y1": 30.0,
+      "x2": 0.0,
+      "y2": 0.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 1,
+      "x1": 0.0,
+      "y1": 12.0,
+      "x2": 60.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 0.0,
+      "y1": 18.0,
+      "x2": 60.0,
+      "y2": 18.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 15.0,
+      "y1": 18.0,
+      "x2": 15.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 30.0,
+      "y1": 18.0,
+      "x2": 30.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 45.0,
+      "y1": 18.0,
+      "x2": 45.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 20.0,
+      "y1": 0.0,
+      "x2": 20.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 40.0,
+      "y1": 0.0,
+      "x2": 40.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 65.0,
+      "y1": 0.0,
+      "x2": 120.0,
+      "y2": 0.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 120.0,
+      "y1": 0.0,
+      "x2": 120.0,
+      "y2": 30.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 120.0,
+      "y1": 30.0,
+      "x2": 65.0,
+      "y2": 30.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 65.0,
+      "y1": 30.0,
+      "x2": 65.0,
+      "y2": 0.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 65.0,
+      "y1": 12.0,
+      "x2": 120.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 65.0,
+      "y1": 18.0,
+      "x2": 120.0,
+      "y2": 18.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 80.0,
+      "y1": 18.0,
+      "x2": 80.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 95.0,
+      "y1": 18.0,
+      "x2": 95.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 108.0,
+      "y1": 18.0,
+      "x2": 108.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 85.0,
+      "y1": 0.0,
+      "x2": 85.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 65.0,
+      "y1": 0.0,
+      "x2": 120.0,
+      "y2": 0.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 1,
+      "x1": 120.0,
+      "y1": 0.0,
+      "x2": 120.0,
+      "y2": 30.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 1,
+      "x1": 120.0,
+      "y1": 30.0,
+      "x2": 65.0,
+      "y2": 30.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 1,
+      "x1": 65.0,
+      "y1": 30.0,
+      "x2": 65.0,
+      "y2": 0.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 1,
+      "x1": 65.0,
+      "y1": 12.0,
+      "x2": 120.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 65.0,
+      "y1": 18.0,
+      "x2": 120.0,
+      "y2": 18.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 100.0,
+      "y1": 18.0,
+      "x2": 100.0,
+      "y2": 30.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 1,
+      "x1": 85.0,
+      "y1": 0.0,
+      "x2": 85.0,
+      "y2": 12.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 0.0,
+      "y1": 35.0,
+      "x2": 30.0,
+      "y2": 35.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 30.0,
+      "y1": 35.0,
+      "x2": 30.0,
+      "y2": 60.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 30.0,
+      "y1": 60.0,
+      "x2": 0.0,
+      "y2": 60.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 0.0,
+      "y1": 60.0,
+      "x2": 0.0,
+      "y2": 35.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 15.0,
+      "y1": 35.0,
+      "x2": 15.0,
+      "y2": 60.0,
+      "material": "glass"
+    },
+    {
+      "floor": 0,
+      "x1": 35.0,
+      "y1": 35.0,
+      "x2": 60.0,
+      "y2": 35.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 60.0,
+      "y1": 35.0,
+      "x2": 60.0,
+      "y2": 65.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 60.0,
+      "y1": 65.0,
+      "x2": 35.0,
+      "y2": 65.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 35.0,
+      "y1": 65.0,
+      "x2": 35.0,
+      "y2": 35.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 35.0,
+      "y1": 50.0,
+      "x2": 60.0,
+      "y2": 50.0,
+      "material": "drywall"
+    },
+    {
+      "floor": 0,
+      "x1": 65.0,
+      "y1": 35.0,
+      "x2": 100.0,
+      "y2": 35.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 100.0,
+      "y1": 35.0,
+      "x2": 100.0,
+      "y2": 60.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 100.0,
+      "y1": 60.0,
+      "x2": 65.0,
+      "y2": 60.0,
+      "material": "concrete"
+    },
+    {
+      "floor": 0,
+      "x1": 65.0,
+      "y1": 60.0,
+      "x2": 65.0,
+      "y2": 35.0,
+      "material": "concrete"
+    }
+  ]
+}
