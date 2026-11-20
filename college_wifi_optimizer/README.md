@@ -2,7 +2,7 @@
 
 An interactive planning tool that decides where to install Wi-Fi access points (APs) on a campus so that the
 most important locations are covered for the least money. It combines graph theory, set cover, integer
-linear programming and shortest-path cable routing, with a Streamlit dashboard and Matplotlib visualisations.
+linear programming and shortest-path cable routing, with a Streamlit dashboard and Matplotlib visualisations. The dashboard has 7 pages, a one-click demo, setting presets, result tables and a downloadable project report.
 
 > This is a **planning approximation** for design and teaching. It is not a replacement for a professional
 > RF site survey, which measures real attenuation and interference.
@@ -18,13 +18,17 @@ linear programming and shortest-path cable routing, with a Streamlit dashboard a
 | ILP | Exact integer programs for the same three modes, solved with SciPy's HiGHS `milp` |
 | Cable routing | Dijkstra shortest-path tree from the server room to each new AP (NetworkX) |
 | Baseline | 500 random placements with the same AP count, to show the optimizer beats chance |
-| Visualisation | Campus graph, weighted graph, coverage heatmap, cable routes, before/after and algorithm comparisons |
+| Visualisation | Campus graph, weighted graph, coverage heatmap, cable routes (one floor or all floors), before/after, optimizer-vs-random and cost breakdown charts |
+| Results tables | Selected APs, cable routes, uncovered locations with reasons, coverage by floor and building |
+| Report & export | Markdown project report, CSV of selected APs, JSON summary |
+| Safety | Warns when the campus or settings changed after the last run, so results are never stale |
 
 ## Project structure
 
 ```
 college_wifi_optimizer/
-├── app.py                      # Streamlit dashboard (6 pages)
+├── app.py                      # Streamlit dashboard (7 pages)
+├── .streamlit/config.toml      # theme
 ├── requirements.txt
 ├── README.md
 ├── data/
@@ -40,6 +44,7 @@ college_wifi_optimizer/
     ├── ilp.py                  # exact ILP formulation (SciPy milp)
     ├── routing.py              # Dijkstra cable routing
     ├── planner.py              # end-to-end pipeline and random baseline
+    ├── report.py               # result tables, summary and Markdown report
     └── visualization.py        # Matplotlib figures
 ```
 
@@ -80,6 +85,9 @@ Optional: regenerate the sample JSON with `python -m wifi_optimizer.sample_data 
 4. **Optimization**: pick a mode and algorithm, then click **Optimize Wi-Fi Placement**.
 5. **Visualization**: view graphs, heatmaps and routes per floor.
 6. **Analysis**: compare initial vs optimized, algorithm results, greedy steps and random baseline.
+7. **Report & Export**: read the generated report and download it (Markdown), the AP list (CSV) or the summary (JSON).
+
+Shortcut: on the Dashboard, press **Run a quick demo optimization** to see every page filled in.
 
 ## Algorithms and the mathematics behind them
 
@@ -112,7 +120,8 @@ Let `need = ceil(target * |U|)`.
     s.t.  y_i <= sum_{j : i in S_j} x_j           for every location i
           sum_i y_i >= need                       (min AP / min cost)
 
-Kept existing APs are fixed to x_j = 1 and carry no new installation cost.
+Kept existing APs are fixed to x_j = 1 and carry no new installation cost. In maximum-coverage mode a tiny
+cost term is added as a tie-break, so among equally good layouts the ILP returns the cheapest one.
 
 **Dijkstra routing.** `nx.single_source_dijkstra` from the server room, weighted by cable distance, gives a
 shortest-path tree. The cable length is the total length of the tree's edges, so shared trunks are counted
