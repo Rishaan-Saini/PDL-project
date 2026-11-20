@@ -47,6 +47,11 @@ def ilp_set_cover(model: CoverageModel, mode: str, *, coverage_target: float,
         obj[:m] = cost
     else:
         obj[m:] = -1.0
+        # Tie-break: among solutions with equal coverage, prefer the cheaper one. The penalty is scaled so
+        # that the whole cost term stays below one covered location and never trades coverage for cost.
+        total_cost = float(cost.sum())
+        if total_cost > 0:
+            obj[:m] = cost / (total_cost + 1.0) * 0.5
 
     rows, lo, hi = [], [], []
     for t in tgts:                      # linking constraints

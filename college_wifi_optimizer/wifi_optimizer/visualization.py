@@ -201,3 +201,42 @@ def fig_comparison(entries):
         ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
     return fig
+
+
+def fig_baseline(initial, best, baseline):
+    """Coverage of the existing network, random placements and the optimized layout, side by side."""
+    labels = ["Existing\nnetwork", "Random\n(average)", "Random\n(best of trials)", "Optimized"]
+    vals = [initial.coverage_pct * 100, baseline["mean_pct"] * 100, baseline["best_pct"] * 100,
+            best.coverage_pct * 100]
+    colors = ["#94a3b8", "#cbd5e1", "#93c5fd", "#16a34a"]
+    fig = Figure(figsize=(7.5, 3.6), dpi=110)
+    ax = fig.add_subplot(111)
+    bars = ax.bar(labels, vals, color=colors, width=0.62)
+    for b, v in zip(bars, vals):
+        ax.text(b.get_x() + b.get_width() / 2, v + 1.2, f"{v:.1f}%", ha="center", fontsize=9)
+    ax.set_ylim(0, 112)
+    ax.set_ylabel("Wi-Fi locations covered (%)", fontsize=9)
+    ax.set_title(f"Optimizer vs chance ({baseline['aps']} APs, {baseline['trials']} random trials)",
+                 fontsize=10)
+    ax.tick_params(axis="x", labelsize=8)
+    ax.spines[["top", "right"]].set_visible(False)
+    fig.tight_layout()
+    return fig
+
+
+def fig_cost_breakdown(ap_cost, cable_cost):
+    """Horizontal bars splitting the total installation cost into hardware and cabling."""
+    fig = Figure(figsize=(7.5, 2.4), dpi=110)
+    ax = fig.add_subplot(111)
+    labels = ["AP hardware", "Cabling", "Total"]
+    vals = [ap_cost, cable_cost, ap_cost + cable_cost]
+    bars = ax.barh(labels, vals, color=["#2563eb", COLOR_ROUTE, "#16a34a"], height=0.55)
+    top = max(vals) if max(vals) > 0 else 1.0
+    for b, v in zip(bars, vals):
+        ax.text(v + top * 0.015, b.get_y() + b.get_height() / 2, f"{v:,.0f}", va="center", fontsize=9)
+    ax.set_xlim(0, top * 1.15)
+    ax.invert_yaxis()
+    ax.set_title("Installation cost breakdown", fontsize=10)
+    ax.spines[["top", "right"]].set_visible(False)
+    fig.tight_layout()
+    return fig
